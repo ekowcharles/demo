@@ -15,5 +15,5 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v3
-      - name: Run tests
-        run: gradle test
+      - name: Run somthing
+        run: echo "${{ inputs.environment }}"
