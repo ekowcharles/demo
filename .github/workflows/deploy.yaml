@@ -6,7 +6,10 @@ on:
     inputs:
       environment:
         description: Type in the deployment environment
-        type: string
+        type: choice
+        options:
+        - development
+        - production
         required: true
 
 jobs:
