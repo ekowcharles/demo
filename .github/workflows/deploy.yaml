@@ -2,6 +2,10 @@ name: deployment-job
 
 on:
   push:
+    branches:
+      - "main"
+    paths:
+      - src/**
   workflow_dispatch:
     inputs:
       environment:
