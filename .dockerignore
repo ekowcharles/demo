@@ -5,3 +5,4 @@ build
 .dockerignore
 .gitignore
 Dockerfile
+.DS_Store
