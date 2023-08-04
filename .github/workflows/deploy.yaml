@@ -3,6 +3,11 @@ name: deployment-job
 on:
   push:
   workflow_dispatch:
+    inputs:
+      environment:
+        description: Type in the deployment environment
+        type: string
+        required: true
 
 jobs:
   build-and-deploy:
