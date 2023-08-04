@@ -1,0 +1,11 @@
+name: deployment-job
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+      - name: Run tests
+        uses: bash
+        run: gradle test
