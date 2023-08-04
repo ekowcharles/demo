@@ -22,5 +22,5 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v3
-      - name: Run somthing
-        run: echo "${{ inputs.environment }}"
+      - name: Build
+        run: docker build . -t demo:jre
